@@ -1,51 +1,664 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoaOnWheels24 | Premium Taxi Service in Goa</title>
-</head>
-<body>
-     <!-- Navigation -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
     <nav>
-        <div class="logo">Goa<span>OnWheels24</span></div>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+      <div class="logo">Goa<span>OnWheels24</span></div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#fleet">Our Fleet</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <div class="contact-info">
+        <a href="tel:+919420205083" class="btn-call">Call: +91 9420205083</a>
+        <div class="social-icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="social-icon"
+            title="Facebook"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="social-icon"
+            title="Instagram"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/919420205083"
+            target="_blank"
+            class="social-icon"
+            title="WhatsApp"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+          </a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#packages">Packages</a></li>
-            <li><a href="#fleet">Our Fleet</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-        </ul>
-        <div class="contact-info">
-            <a href="tel:+919420205083" class="btn-call">Call: +91 9420205083</a>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">
-                    <svg viewBox="0 0 24 24">
-                        <path
-                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                    </svg>
-                </a>
-                <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
-                    <svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                    </svg>
-                </a>
-                <a href="https://wa.me/919420205083" target="_blank" class="social-icon" title="WhatsApp">
-                    <svg viewBox="0 0 24 24">
-                        <path
-                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                    </svg>
-                </a>
-            </div>
-            <button id="dark-mode-toggle" class="dark-mode-btn" title="Toggle Dark Mode">🌙</button>
-        </div>
+        <button
+          id="dark-mode-toggle"
+          class="dark-mode-btn"
+          title="Toggle Dark Mode"
+        >
+          🌙
+        </button>
+      </div>
     </nav>
-</body>
+  </body>
+</html>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <!-- REPLACE THE STYLE INLINE BACKGROUND IMAGE BELOW -->
+  <div class="hero-bg" style="background-image: url(&quot;pic.jpg&quot;)"></div>
+  <div class="hero-content">
+    <h1>Explore Goa with <span>Comfort</span> & Ease</h1>
+    <p>
+      Premium airport transfers, local sightseeing, and outstation trips. Book
+      your trusted ride around the tropical paradise with GoaOnWheels24.
+    </p>
+    <a
+      href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20a%20ride%20with%20GoaOnWheels24."
+      target="_blank"
+      class="btn-primary"
+      >Book Your Ride Now</a
+    >
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services section reveal" id="services">
+  <h2 class="section-title">Our Premium Services</h2>
+  <p class="section-subtitle">
+    Reliable, comfortable, and affordable travel solutions.
+  </p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">✈️</div>
+      <h3>Airport Transfers</h3>
+      <p>
+        Prompt pickup and drop-off to Dabolim and Mopa (Manohar) International
+        Airports anytime of the day or night.
+      </p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🌴</div>
+      <h3>Sightseeing Tours</h3>
+      <p>
+        Customized half-day and full-day sightseeing packages for both vibrant
+        North Goa and peaceful South Goa.
+      </p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⏱️</div>
+      <h3>Hourly Rentals</h3>
+      <p>
+        Hire a car at your Door-step. Perfect for shopping excursions, attending
+        weddings, or business meetings.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Tour Packages Section -->
+<section class="packages section reveal" id="packages">
+  <h2 class="section-title">Tour Packages & Pricing</h2>
+  <p class="section-subtitle">
+    Explore our curated sightseeing packages across Goa.
+  </p>
+
+  <!-- Tabs Navigation -->
+  <div class="packages-tabs" id="packagesTabs" role="tablist">
+    <button
+      class="pkg-tab active"
+      data-tab="north"
+      role="tab"
+      aria-selected="true"
+    >
+      <span class="pkg-tab-icon">🏖️</span>
+      <span class="pkg-tab-label">North Goa</span>
+    </button>
+    <button class="pkg-tab" data-tab="south" role="tab" aria-selected="false">
+      <span class="pkg-tab-icon">🛕</span>
+      <span class="pkg-tab-label">South Goa</span>
+    </button>
+    <button
+      class="pkg-tab"
+      data-tab="extnorth"
+      role="tab"
+      aria-selected="false"
+    >
+      <span class="pkg-tab-icon">🏝️</span>
+      <span class="pkg-tab-label">Extreme North</span>
+    </button>
+    <button
+      class="pkg-tab"
+      data-tab="extsouth"
+      role="tab"
+      aria-selected="false"
+    >
+      <span class="pkg-tab-icon">🌊</span>
+      <span class="pkg-tab-label">Extreme South</span>
+    </button>
+    <button class="pkg-tab" data-tab="drops" role="tab" aria-selected="false">
+      <span class="pkg-tab-icon">📍</span>
+      <span class="pkg-tab-label">Location Drops</span>
+    </button>
+    <button class="pkg-tab" data-tab="hourly" role="tab" aria-selected="false">
+      <span class="pkg-tab-icon">⏱️</span>
+      <span class="pkg-tab-label">Hourly / KM</span>
+    </button>
+  </div>
+</section>
+
+<!-- Tab Panels -->
+<div class="packages-panels">
+  <!-- North Goa -->
+  <div class="pkg-panel active" id="panel-north" role="tabpanel">
+    <div class="pkg-header">
+      <h3>North Goa Sightseeing</h3>
+      <div class="pkg-price">₹2,500</div>
+    </div>
+    <ul class="pkg-list">
+      <li><span class="pkg-dot"></span>Aguada Fort</li>
+      <li><span class="pkg-dot"></span>Dolphin Trip</li>
+      <li><span class="pkg-dot"></span>Candolim Beach</li>
+      <li><span class="pkg-dot"></span>Snow Park</li>
+      <li><span class="pkg-dot"></span>Baga Beach</li>
+      <li><span class="pkg-dot"></span>Thunder World</li>
+      <li><span class="pkg-dot"></span>Anjuna Beach</li>
+      <li><span class="pkg-dot"></span>Chapora Fort</li>
+      <li><span class="pkg-dot"></span>Vagator Beach</li>
+      <li><span class="pkg-dot"></span>Panjim City 🌆</li>
+    </ul>
+    <a
+      href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20North%20Goa%20Sightseeing%20Package%20(%E2%82%B92%2C500)."
+      target="_blank"
+      class="pkg-book-btn"
+      >Book This Package</a
+    >
+  </div>
+</div>
+
+<!-- South Goa -->
+<div class="pkg-panel" id="panel-south" role="tabpanel">
+  <div class="pkg-header">
+    <h3>South Goa Sightseeing</h3>
+    <div class="pkg-price">₹3,000</div>
+  </div>
+  <ul class="pkg-list">
+    <li><span class="pkg-dot"></span>Old Goa Church 💒</li>
+    <li><span class="pkg-dot"></span>Mangeshi Temple 🛕</li>
+    <li><span class="pkg-dot"></span>Balaji Temple 🛕</li>
+    <li><span class="pkg-dot"></span>Shanta Durga Temple 🛕</li>
+    <li><span class="pkg-dot"></span>Dona Paula Beach</li>
+  </ul>
+  <a
+    href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20South%20Goa%20Sightseeing%20Package%20(%E2%82%B93%2C000)."
+    target="_blank"
+    class="pkg-book-btn"
+    >Book This Package</a
+  >
+</div>
+
+<!-- Extreme North Goa -->
+<div class="pkg-panel" id="panel-extnorth" role="tabpanel">
+  <div class="pkg-header">
+    <h3>Extreme North Goa</h3>
+    <div class="pkg-price">₹3,200</div>
+  </div>
+  <ul class="pkg-list">
+    <li><span class="pkg-dot"></span>Morjim Beach</li>
+    <li><span class="pkg-dot"></span>Ashvem Beach</li>
+    <li><span class="pkg-dot"></span>Mandrem Beach</li>
+    <li><span class="pkg-dot"></span>Arambol Beach</li>
+    <li><span class="pkg-dot"></span>Kerim Beach</li>
+  </ul>
+  <a
+    href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20Extreme%20North%20Goa%20Package%20(%E2%82%B93%2C200)."
+    target="_blank"
+    class="pkg-book-btn"
+    >Book This Package</a
+  >
+</div>
+
+<!-- Extreme South Goa -->
+<div class="pkg-panel" id="panel-extsouth" role="tabpanel">
+  <div class="pkg-header">
+    <h3>Extreme South Goa</h3>
+    <div class="pkg-price">₹4,900</div>
+  </div>
+  <ul class="pkg-list">
+    <li><span class="pkg-dot"></span>Cabo de Rama Fort</li>
+    <li><span class="pkg-dot"></span>Agonda Beach</li>
+    <li><span class="pkg-dot"></span>Butterfly Beach</li>
+    <li><span class="pkg-dot"></span>Palolem Beach</li>
+    <li><span class="pkg-dot"></span>Colva Beach</li>
+  </ul>
+  <a
+    href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20Extreme%20South%20Goa%20Package%20(%E2%82%B94%2C900)."
+    target="_blank"
+    class="pkg-book-btn"
+    >Book This Package</a
+  >
+</div>
+
+<!-- Location Drops -->
+<div class="pkg-panel" id="panel-drops" role="tabpanel">
+  <div class="pkg-header">
+    <h3>Location Drops</h3>
+    <div class="pkg-price-label">Point-to-Point Pricing</div>
+  </div>
+  <ul class="pkg-list pkg-list-priced">
+    <li>
+      <span class="pkg-dot"></span
+      ><span class="pkg-dest">Dudhsagar Waterfall</span
+      ><span class="pkg-dest-price">₹3,900</span>
+    </li>
+    <li>
+      <span class="pkg-dot"></span><span class="pkg-dest">Panjim</span
+      ><span class="pkg-dest-price">₹900</span>
+    </li>
+    <li>
+      <span class="pkg-dot"></span><span class="pkg-dest">Mapusa</span
+      ><span class="pkg-dest-price">₹700</span>
+    </li>
+    <li>
+      <span class="pkg-dot"></span><span class="pkg-dest">Dabolim Airport</span
+      ><span class="pkg-dest-price">₹1,500</span>
+    </li>
+    <li>
+      <span class="pkg-dot"></span><span class="pkg-dest">Mopa Airport</span
+      ><span class="pkg-dest-price">₹1,500</span>
+    </li>
+    <li>
+      <span class="pkg-dot"></span><span class="pkg-dest">Thivim Station</span
+      ><span class="pkg-dest-price">₹1,100</span>
+    </li>
+    <li>
+      <span class="pkg-dot"></span><span class="pkg-dest">Karmali Station</span
+      ><span class="pkg-dest-price">₹1,200</span>
+    </li>
+    <li>
+      <span class="pkg-dot"></span><span class="pkg-dest">Madgaon Station</span
+      ><span class="pkg-dest-price">₹1,700</span>
+    </li>
+  </ul>
+  <a
+    href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20a%20location%20drop%20with%20GoaOnWheels24."
+    target="_blank"
+    class="pkg-book-btn"
+    >Book on WhatsApp</a
+  >
+</div>
+
+
+ <!-- Hourly / KM -->
+          <div class="pkg-panel" id="panel-hourly" role="tabpanel">
+            <div class="pkg-header">
+              <h3>Hourly / KM Rental</h3>
+              <div class="pkg-price-label">Flexible Pricing</div>
+            </div>
+            <ul class="pkg-list pkg-list-priced">
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">8 Hr / 80 Km</span
+                ><span class="pkg-dest-price">₹3,000</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">4 Hr / 40 Km</span
+                ><span class="pkg-dest-price">₹2,200</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Extra Km</span
+                ><span class="pkg-dest-price">₹20</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Extra Hour</span
+                ><span class="pkg-dest-price">₹200</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Night Charges</span
+                ><span class="pkg-dest-price">₹500</span>
+              </li>
+            </ul>
+            <a
+              href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20a%20flexible%20hourly%20rental%20with%20GoaOnWheels24."
+              target="_blank"
+              class="pkg-book-btn"
+              >Book on WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+ <!-- Fleet Section -->
+    <section class="fleet section reveal" id="fleet">
+      <h2 class="section-title">Our Premium Car</h2>
+      <p class="section-subtitle">
+        A well-maintained vehicle perfect for your Goan journey.
+      </p>
+
+      <div class="fleet-container">
+        <div class="fleet-card">
+          <!-- BLANK IMAGE PLACEHOLDER: Provide actual image URL in the style background-image below or replace div with <img> -->
+          <div
+            class="fleet-image-placeholder blank-bg"
+            style="
+              background-image: url();
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            [ Insert Suzuki Baleno Image Here ]
+          </div>
+
+          <div class="fleet-details">
+            <h3>Suzuki Baleno (Silver)</h3>
+            <div class="fleet-info">
+              <span>👥 Up to 4 Passengers</span>
+              <span>🧳 2-3 Bags</span>
+              <span>🧳 GPS </span>
+              <span>🧳 Sanitized </span>
+              <span>🧳 Phone Charging </span>
+            </div>
+            <p style="color: #d1862a; margin-bottom: 25px; font-size: 1.1rem">
+              Enjoy comfort and ample legroom with our modern, spacious, and
+              fully air-conditioned silver Suzuki Baleno.
+            </p>
+            <a
+              href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20Suzuki%20Baleno%20for%20my%20trip%20to%20Goa."
+              target="_blank"
+              class="btn-secondary"
+              >Book This Car</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Gallery Section -->
+    <section class="gallery section reveal" id="gallery">
+      <h2 class="section-title">Our Gallery</h2>
+      <p class="section-subtitle">
+        Glimpses of beautiful Goa & our premium fleet.
+      </p>
+
+      <div class="wheel-slider-container">
+        <div class="wheel-slider" id="wheel-slider">
+          <div class="wheel-item" style="background-image: url()">
+            [ Insert Image 1 ]
+          </div>
+          <div class="wheel-item" style="background-image: url()">
+            [ Insert Image 2 ]
+          </div>
+          <div class="wheel-item" style="background-image: url()">
+            [ Insert Image 3 ]
+          </div>
+          <div class="wheel-item" style="background-image: url()">
+            [ Insert Image 4 ]
+          </div>
+          <div class="wheel-item" style="background-image: url()">
+            [ Insert Image 5 ]
+          </div>
+          <div class="wheel-item" style="background-image: url()">
+            [ Insert Image 6 ]
+          </div>
+        </div>
+        <div class="wheel-controls">
+          <button class="wheel-btn" id="wheel-prev">&#10094;</button>
+          <button class="wheel-btn" id="wheel-next">&#10095;</button>
+        </div>
+      </div>
+      <div style="margin-top: 50px">
+        <a href="gallery.html" class="btn-secondary">View Full Gallery</a>
+      </div>
+    </section>
+
+     <!-- Booking Section -->
+    <!-- <section class="booking section reveal" id="booking">
+        <div class="booking-container">
+            <h2>Book Your Taxi</h2>
+            <p>Fill out the details below and we will confirm your booking instantly.</p>
+
+            <form class="booking-form"
+                onsubmit="event.preventDefault(); alert('Booking request sent successfully! We will contact you soon.');">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+91 00000 00000" required>
+                </div>
+                <div class="form-group">
+                    <label>Pickup Location</label>
+                    <input type="text" placeholder="e.g. Dabolim Airport" required>
+                </div>
+                <div class="form-group">
+                    <label>Drop Location</label>
+                    <input type="text" placeholder="e.g. Baga Beach" required>
+                </div>
+                <div class="form-group">
+                    <label>Travel Date & Time</label>
+                    <input type="datetime-local" required>
+                </div>
+                <div class="form-group"> -->
+    <!-- Vehicle Type is hidden because there's only 1 option now, but sent in form implicitly -->
+    <!-- <input type="hidden" value="Suzuki Baleno">
+                </div>
+                <div class="form-group full">
+                    <button type="submit" class="btn-submit">Confirm Booking Inquiry</button>
+                </div>
+            </form>
+        </div>
+    </section> -->
+
+      <!-- Reviews Section -->
+    <section class="reviews section reveal" id="reviews">
+      <h2 class="section-title">Happy Customers</h2>
+      <p class="section-subtitle">
+        See what our travelers have to say about GoaOnWheels24.
+      </p>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "Excellent service! Our driver was punctual and the Suzuki Baleno
+            was spotless. Made our Goa trip completely hassle-free."
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">R</div>
+            <div class="reviewer-info">
+              <h4>Rahul Sharma</h4>
+              <p>Visited from Delhi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "Highly recommended for airport transfers. The booking process was
+            very smooth and the ride was comfortable even with our luggage."
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">S</div>
+            <div class="reviewer-info">
+              <h4>Sarah D'Souza</h4>
+              <p>Visited from Mumbai</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p class="review-text">
+            "We took the South Goa sightseeing trip. The driver knew all the
+            best local spots and beaches. Very polite and professional."
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">M</div>
+            <div class="reviewer-info">
+              <h4>Manoj Gupta</h4>
+              <p>Visited from Bangalore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Review Form -->
+      <div class="booking-container" style="margin-top: 60px; padding: 40px">
+        <h2>Leave a Review</h2>
+        <p style="margin-bottom: 30px">
+          Share your experience with GoaOnWheels24!
+        </p>
+        <form class="booking-form" id="review-form">
+          <div class="form-group full">
+            <label>Your Name</label>
+            <input
+              type="text"
+              id="review-name"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              id="review-email"
+              placeholder="johndoe@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Where are you from?</label>
+            <input
+              type="text"
+              id="review-location"
+              placeholder="e.g. Mumbai"
+              required
+            />
+          </div>
+          <div class="form-group full">
+            <label>Rating (1-5 Stars)</label>
+            <select id="review-rating" required>
+              <option value="5">★★★★★</option>
+              <option value="4">★★★★☆</option>
+              <option value="3">★★★☆☆</option>
+              <option value="2">★★☆☆☆</option>
+              <option value="1">★☆☆☆☆</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label>Your Review</label>
+            <textarea
+              id="review-text"
+              rows="4"
+              placeholder="How was your trip?"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group full">
+            <button type="submit" class="btn-submit">Submit Review</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">Goa<span>OnWheels24</span></div>
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/share/1ELoTiHuSo/"
+          target="_blank"
+          class="social-icon"
+          title="Facebook"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          class="social-icon"
+          title="Instagram"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://wa.me/919420205083"
+          target="_blank"
+          class="social-icon"
+          title="WhatsApp"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="footer-contact">
+        <a
+          href="tel:+919420205083"
+          style="color: inherit; text-decoration: none"
+          >📞 +91 9420205083</a
+        >
+
+        <span>📍 Calangut, Goa, India 403001</span>
+      </div>
+      <div class="copyright">
+        &copy; 2024 GoaOnWheels24. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
