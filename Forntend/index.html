@@ -6,6 +6,7 @@
     <title>GoaOnWheels24 | Premium Taxi Service in Goa</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- Navigation -->
     <nav>
@@ -72,257 +73,277 @@
         </button>
       </div>
     </nav>
-  </body>
-</html>
 
-<!-- Hero Section -->
-<section class="hero" id="home">
-  <!-- REPLACE THE STYLE INLINE BACKGROUND IMAGE BELOW -->
-  <div class="hero-bg" style="background-image: url(&quot;pic.jpg&quot;)"></div>
-  <div class="hero-content">
-    <h1>Explore Goa with <span>Comfort</span> & Ease</h1>
-    <p>
-      Premium airport transfers, local sightseeing, and outstation trips. Book
-      your trusted ride around the tropical paradise with GoaOnWheels24.
-    </p>
-    <a
-      href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20a%20ride%20with%20GoaOnWheels24."
-      target="_blank"
-      class="btn-primary"
-      >Book Your Ride Now</a
-    >
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <!-- REPLACE THE STYLE INLINE BACKGROUND IMAGE BELOW -->
+      <div
+        class="hero-bg"
+        style="background-image: url(&quot;pic.jpg&quot;)"
+      ></div>
+      <div class="hero-content">
+        <h1>Explore Goa with <span>Comfort</span> & Ease</h1>
+        <p>
+          Premium airport transfers, local sightseeing, and outstation trips.
+          Book your trusted ride around the tropical paradise with
+          GoaOnWheels24.
+        </p>
+        <a
+          href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20a%20ride%20with%20GoaOnWheels24."
+          target="_blank"
+          class="btn-primary"
+          >Book Your Ride Now</a
+        >
+      </div>
+    </section>
 
-<!-- Services Section -->
-<section class="services section reveal" id="services">
-  <h2 class="section-title">Our Premium Services</h2>
-  <p class="section-subtitle">
-    Reliable, comfortable, and affordable travel solutions.
-  </p>
-
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">✈️</div>
-      <h3>Airport Transfers</h3>
-      <p>
-        Prompt pickup and drop-off to Dabolim and Mopa (Manohar) International
-        Airports anytime of the day or night.
+    <!-- Services Section -->
+    <section class="services section reveal" id="services">
+      <h2 class="section-title">Our Premium Services</h2>
+      <p class="section-subtitle">
+        Reliable, comfortable, and affordable travel solutions.
       </p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🌴</div>
-      <h3>Sightseeing Tours</h3>
-      <p>
-        Customized half-day and full-day sightseeing packages for both vibrant
-        North Goa and peaceful South Goa.
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">✈️</div>
+          <h3>Airport Transfers</h3>
+          <p>
+            Prompt pickup and drop-off to Dabolim and Mopa (Manohar)
+            International Airports anytime of the day or night.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌴</div>
+          <h3>Sightseeing Tours</h3>
+          <p>
+            Customized half-day and full-day sightseeing packages for both
+            vibrant North Goa and peaceful South Goa.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⏱️</div>
+          <h3>Hourly Rentals</h3>
+          <p>
+            Hire a car at your Door-step. Perfect for shopping excursions,
+            attending weddings, or business meetings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section class="packages section reveal" id="packages">
+      <h2 class="section-title">Tour Packages & Pricing</h2>
+      <p class="section-subtitle">
+        Explore our curated sightseeing packages across Goa.
       </p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">⏱️</div>
-      <h3>Hourly Rentals</h3>
-      <p>
-        Hire a car at your Door-step. Perfect for shopping excursions, attending
-        weddings, or business meetings.
-      </p>
-    </div>
-  </div>
-</section>
 
-<!-- Tour Packages Section -->
-<section class="packages section reveal" id="packages">
-  <h2 class="section-title">Tour Packages & Pricing</h2>
-  <p class="section-subtitle">
-    Explore our curated sightseeing packages across Goa.
-  </p>
+      <div class="packages-container">
+        <!-- Tabs Navigation -->
+        <div class="packages-tabs" id="packagesTabs" role="tablist">
+          <button
+            class="pkg-tab active"
+            data-tab="north"
+            role="tab"
+            aria-selected="true"
+          >
+            <span class="pkg-tab-icon">🏖️</span>
+            <span class="pkg-tab-label">North Goa</span>
+          </button>
+          <button
+            class="pkg-tab"
+            data-tab="south"
+            role="tab"
+            aria-selected="false"
+          >
+            <span class="pkg-tab-icon">🛕</span>
+            <span class="pkg-tab-label">South Goa</span>
+          </button>
+          <button
+            class="pkg-tab"
+            data-tab="extnorth"
+            role="tab"
+            aria-selected="false"
+          >
+            <span class="pkg-tab-icon">🏝️</span>
+            <span class="pkg-tab-label">Extreme North</span>
+          </button>
+          <button
+            class="pkg-tab"
+            data-tab="extsouth"
+            role="tab"
+            aria-selected="false"
+          >
+            <span class="pkg-tab-icon">🌊</span>
+            <span class="pkg-tab-label">Extreme South</span>
+          </button>
+          <button
+            class="pkg-tab"
+            data-tab="drops"
+            role="tab"
+            aria-selected="false"
+          >
+            <span class="pkg-tab-icon">📍</span>
+            <span class="pkg-tab-label">Location Drops</span>
+          </button>
+          <button
+            class="pkg-tab"
+            data-tab="hourly"
+            role="tab"
+            aria-selected="false"
+          >
+            <span class="pkg-tab-icon">⏱️</span>
+            <span class="pkg-tab-label">Hourly / KM</span>
+          </button>
+        </div>
 
-  <!-- Tabs Navigation -->
-  <div class="packages-tabs" id="packagesTabs" role="tablist">
-    <button
-      class="pkg-tab active"
-      data-tab="north"
-      role="tab"
-      aria-selected="true"
-    >
-      <span class="pkg-tab-icon">🏖️</span>
-      <span class="pkg-tab-label">North Goa</span>
-    </button>
-    <button class="pkg-tab" data-tab="south" role="tab" aria-selected="false">
-      <span class="pkg-tab-icon">🛕</span>
-      <span class="pkg-tab-label">South Goa</span>
-    </button>
-    <button
-      class="pkg-tab"
-      data-tab="extnorth"
-      role="tab"
-      aria-selected="false"
-    >
-      <span class="pkg-tab-icon">🏝️</span>
-      <span class="pkg-tab-label">Extreme North</span>
-    </button>
-    <button
-      class="pkg-tab"
-      data-tab="extsouth"
-      role="tab"
-      aria-selected="false"
-    >
-      <span class="pkg-tab-icon">🌊</span>
-      <span class="pkg-tab-label">Extreme South</span>
-    </button>
-    <button class="pkg-tab" data-tab="drops" role="tab" aria-selected="false">
-      <span class="pkg-tab-icon">📍</span>
-      <span class="pkg-tab-label">Location Drops</span>
-    </button>
-    <button class="pkg-tab" data-tab="hourly" role="tab" aria-selected="false">
-      <span class="pkg-tab-icon">⏱️</span>
-      <span class="pkg-tab-label">Hourly / KM</span>
-    </button>
-  </div>
-</section>
+        <!-- Tab Panels -->
+        <div class="packages-panels">
+          <!-- North Goa -->
+          <div class="pkg-panel active" id="panel-north" role="tabpanel">
+            <div class="pkg-header">
+              <h3>North Goa Sightseeing</h3>
+              <div class="pkg-price">₹2,500</div>
+            </div>
+            <ul class="pkg-list">
+              <li><span class="pkg-dot"></span>Aguada Fort</li>
+              <li><span class="pkg-dot"></span>Dolphin Trip</li>
+              <li><span class="pkg-dot"></span>Candolim Beach</li>
+              <li><span class="pkg-dot"></span>Snow Park</li>
+              <li><span class="pkg-dot"></span>Baga Beach</li>
+              <li><span class="pkg-dot"></span>Thunder World</li>
+              <li><span class="pkg-dot"></span>Anjuna Beach</li>
+              <li><span class="pkg-dot"></span>Chapora Fort</li>
+              <li><span class="pkg-dot"></span>Vagator Beach</li>
+              <li><span class="pkg-dot"></span>Panjim City 🌆</li>
+            </ul>
+            <a
+              href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20North%20Goa%20Sightseeing%20Package%20(%E2%82%B92%2C500)."
+              target="_blank"
+              class="pkg-book-btn"
+              >Book This Package</a
+            >
+          </div>
 
-<!-- Tab Panels -->
-<div class="packages-panels">
-  <!-- North Goa -->
-  <div class="pkg-panel active" id="panel-north" role="tabpanel">
-    <div class="pkg-header">
-      <h3>North Goa Sightseeing</h3>
-      <div class="pkg-price">₹2,500</div>
-    </div>
-    <ul class="pkg-list">
-      <li><span class="pkg-dot"></span>Aguada Fort</li>
-      <li><span class="pkg-dot"></span>Dolphin Trip</li>
-      <li><span class="pkg-dot"></span>Candolim Beach</li>
-      <li><span class="pkg-dot"></span>Snow Park</li>
-      <li><span class="pkg-dot"></span>Baga Beach</li>
-      <li><span class="pkg-dot"></span>Thunder World</li>
-      <li><span class="pkg-dot"></span>Anjuna Beach</li>
-      <li><span class="pkg-dot"></span>Chapora Fort</li>
-      <li><span class="pkg-dot"></span>Vagator Beach</li>
-      <li><span class="pkg-dot"></span>Panjim City 🌆</li>
-    </ul>
-    <a
-      href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20North%20Goa%20Sightseeing%20Package%20(%E2%82%B92%2C500)."
-      target="_blank"
-      class="pkg-book-btn"
-      >Book This Package</a
-    >
-  </div>
-</div>
+          <!-- South Goa -->
+          <div class="pkg-panel" id="panel-south" role="tabpanel">
+            <div class="pkg-header">
+              <h3>South Goa Sightseeing</h3>
+              <div class="pkg-price">₹3,000</div>
+            </div>
+            <ul class="pkg-list">
+              <li><span class="pkg-dot"></span>Old Goa Church 💒</li>
+              <li><span class="pkg-dot"></span>Mangeshi Temple 🛕</li>
+              <li><span class="pkg-dot"></span>Balaji Temple 🛕</li>
+              <li><span class="pkg-dot"></span>Shanta Durga Temple 🛕</li>
+              <li><span class="pkg-dot"></span>Dona Paula Beach</li>
+            </ul>
+            <a
+              href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20South%20Goa%20Sightseeing%20Package%20(%E2%82%B93%2C000)."
+              target="_blank"
+              class="pkg-book-btn"
+              >Book This Package</a
+            >
+          </div>
 
-<!-- South Goa -->
-<div class="pkg-panel" id="panel-south" role="tabpanel">
-  <div class="pkg-header">
-    <h3>South Goa Sightseeing</h3>
-    <div class="pkg-price">₹3,000</div>
-  </div>
-  <ul class="pkg-list">
-    <li><span class="pkg-dot"></span>Old Goa Church 💒</li>
-    <li><span class="pkg-dot"></span>Mangeshi Temple 🛕</li>
-    <li><span class="pkg-dot"></span>Balaji Temple 🛕</li>
-    <li><span class="pkg-dot"></span>Shanta Durga Temple 🛕</li>
-    <li><span class="pkg-dot"></span>Dona Paula Beach</li>
-  </ul>
-  <a
-    href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20South%20Goa%20Sightseeing%20Package%20(%E2%82%B93%2C000)."
-    target="_blank"
-    class="pkg-book-btn"
-    >Book This Package</a
-  >
-</div>
+          <!-- Extreme North Goa -->
+          <div class="pkg-panel" id="panel-extnorth" role="tabpanel">
+            <div class="pkg-header">
+              <h3>Extreme North Goa</h3>
+              <div class="pkg-price">₹3,200</div>
+            </div>
+            <ul class="pkg-list">
+              <li><span class="pkg-dot"></span>Morjim Beach</li>
+              <li><span class="pkg-dot"></span>Ashvem Beach</li>
+              <li><span class="pkg-dot"></span>Mandrem Beach</li>
+              <li><span class="pkg-dot"></span>Arambol Beach</li>
+              <li><span class="pkg-dot"></span>Kerim Beach</li>
+            </ul>
+            <a
+              href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20Extreme%20North%20Goa%20Package%20(%E2%82%B93%2C200)."
+              target="_blank"
+              class="pkg-book-btn"
+              >Book This Package</a
+            >
+          </div>
 
-<!-- Extreme North Goa -->
-<div class="pkg-panel" id="panel-extnorth" role="tabpanel">
-  <div class="pkg-header">
-    <h3>Extreme North Goa</h3>
-    <div class="pkg-price">₹3,200</div>
-  </div>
-  <ul class="pkg-list">
-    <li><span class="pkg-dot"></span>Morjim Beach</li>
-    <li><span class="pkg-dot"></span>Ashvem Beach</li>
-    <li><span class="pkg-dot"></span>Mandrem Beach</li>
-    <li><span class="pkg-dot"></span>Arambol Beach</li>
-    <li><span class="pkg-dot"></span>Kerim Beach</li>
-  </ul>
-  <a
-    href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20Extreme%20North%20Goa%20Package%20(%E2%82%B93%2C200)."
-    target="_blank"
-    class="pkg-book-btn"
-    >Book This Package</a
-  >
-</div>
+          <!-- Extreme South Goa -->
+          <div class="pkg-panel" id="panel-extsouth" role="tabpanel">
+            <div class="pkg-header">
+              <h3>Extreme South Goa</h3>
+              <div class="pkg-price">₹4,900</div>
+            </div>
+            <ul class="pkg-list">
+              <li><span class="pkg-dot"></span>Cabo de Rama Fort</li>
+              <li><span class="pkg-dot"></span>Agonda Beach</li>
+              <li><span class="pkg-dot"></span>Butterfly Beach</li>
+              <li><span class="pkg-dot"></span>Palolem Beach</li>
+              <li><span class="pkg-dot"></span>Colva Beach</li>
+            </ul>
+            <a
+              href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20Extreme%20South%20Goa%20Package%20(%E2%82%B94%2C900)."
+              target="_blank"
+              class="pkg-book-btn"
+              >Book This Package</a
+            >
+          </div>
 
-<!-- Extreme South Goa -->
-<div class="pkg-panel" id="panel-extsouth" role="tabpanel">
-  <div class="pkg-header">
-    <h3>Extreme South Goa</h3>
-    <div class="pkg-price">₹4,900</div>
-  </div>
-  <ul class="pkg-list">
-    <li><span class="pkg-dot"></span>Cabo de Rama Fort</li>
-    <li><span class="pkg-dot"></span>Agonda Beach</li>
-    <li><span class="pkg-dot"></span>Butterfly Beach</li>
-    <li><span class="pkg-dot"></span>Palolem Beach</li>
-    <li><span class="pkg-dot"></span>Colva Beach</li>
-  </ul>
-  <a
-    href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20the%20Extreme%20South%20Goa%20Package%20(%E2%82%B94%2C900)."
-    target="_blank"
-    class="pkg-book-btn"
-    >Book This Package</a
-  >
-</div>
+          <!-- Location Drops -->
+          <div class="pkg-panel" id="panel-drops" role="tabpanel">
+            <div class="pkg-header">
+              <h3>Location Drops</h3>
+              <div class="pkg-price-label">Point-to-Point Pricing</div>
+            </div>
+            <ul class="pkg-list pkg-list-priced">
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Dudhsagar Waterfall</span
+                ><span class="pkg-dest-price">₹3,900</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span><span class="pkg-dest">Panjim</span
+                ><span class="pkg-dest-price">₹900</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span><span class="pkg-dest">Mapusa</span
+                ><span class="pkg-dest-price">₹700</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Dabolim Airport</span
+                ><span class="pkg-dest-price">₹1,500</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Mopa Airport</span
+                ><span class="pkg-dest-price">₹1,500</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Thivim Station</span
+                ><span class="pkg-dest-price">₹1,100</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Karmali Station</span
+                ><span class="pkg-dest-price">₹1,200</span>
+              </li>
+              <li>
+                <span class="pkg-dot"></span
+                ><span class="pkg-dest">Madgaon Station</span
+                ><span class="pkg-dest-price">₹1,700</span>
+              </li>
+            </ul>
+            <a
+              href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20a%20location%20drop%20with%20GoaOnWheels24."
+              target="_blank"
+              class="pkg-book-btn"
+              >Book on WhatsApp</a
+            >
+          </div>
 
-<!-- Location Drops -->
-<div class="pkg-panel" id="panel-drops" role="tabpanel">
-  <div class="pkg-header">
-    <h3>Location Drops</h3>
-    <div class="pkg-price-label">Point-to-Point Pricing</div>
-  </div>
-  <ul class="pkg-list pkg-list-priced">
-    <li>
-      <span class="pkg-dot"></span
-      ><span class="pkg-dest">Dudhsagar Waterfall</span
-      ><span class="pkg-dest-price">₹3,900</span>
-    </li>
-    <li>
-      <span class="pkg-dot"></span><span class="pkg-dest">Panjim</span
-      ><span class="pkg-dest-price">₹900</span>
-    </li>
-    <li>
-      <span class="pkg-dot"></span><span class="pkg-dest">Mapusa</span
-      ><span class="pkg-dest-price">₹700</span>
-    </li>
-    <li>
-      <span class="pkg-dot"></span><span class="pkg-dest">Dabolim Airport</span
-      ><span class="pkg-dest-price">₹1,500</span>
-    </li>
-    <li>
-      <span class="pkg-dot"></span><span class="pkg-dest">Mopa Airport</span
-      ><span class="pkg-dest-price">₹1,500</span>
-    </li>
-    <li>
-      <span class="pkg-dot"></span><span class="pkg-dest">Thivim Station</span
-      ><span class="pkg-dest-price">₹1,100</span>
-    </li>
-    <li>
-      <span class="pkg-dot"></span><span class="pkg-dest">Karmali Station</span
-      ><span class="pkg-dest-price">₹1,200</span>
-    </li>
-    <li>
-      <span class="pkg-dot"></span><span class="pkg-dest">Madgaon Station</span
-      ><span class="pkg-dest-price">₹1,700</span>
-    </li>
-  </ul>
-  <a
-    href="https://wa.me/919420205083?text=Hi!%20I%20want%20to%20book%20a%20location%20drop%20with%20GoaOnWheels24."
-    target="_blank"
-    class="pkg-book-btn"
-    >Book on WhatsApp</a
-  >
-</div>
-
-
- <!-- Hourly / KM -->
+          <!-- Hourly / KM -->
           <div class="pkg-panel" id="panel-hourly" role="tabpanel">
             <div class="pkg-header">
               <h3>Hourly / KM Rental</h3>
@@ -366,8 +387,7 @@
       </div>
     </section>
 
-    
- <!-- Fleet Section -->
+    <!-- Fleet Section -->
     <section class="fleet section reveal" id="fleet">
       <h2 class="section-title">Our Premium Car</h2>
       <p class="section-subtitle">
@@ -412,7 +432,7 @@
       </div>
     </section>
 
-     <!-- Gallery Section -->
+    <!-- Gallery Section -->
     <section class="gallery section reveal" id="gallery">
       <h2 class="section-title">Our Gallery</h2>
       <p class="section-subtitle">
@@ -450,7 +470,7 @@
       </div>
     </section>
 
-     <!-- Booking Section -->
+    <!-- Booking Section -->
     <!-- <section class="booking section reveal" id="booking">
         <div class="booking-container">
             <h2>Book Your Taxi</h2>
@@ -489,7 +509,7 @@
         </div>
     </section> -->
 
-      <!-- Reviews Section -->
+    <!-- Reviews Section -->
     <section class="reviews section reveal" id="reviews">
       <h2 class="section-title">Happy Customers</h2>
       <p class="section-subtitle">
@@ -564,7 +584,7 @@
             <input
               type="email"
               id="review-email"
-              placeholder="johndoe@gmail.com"
+              placeholder="johndoe@gmial.com"
               required
             />
           </div>
